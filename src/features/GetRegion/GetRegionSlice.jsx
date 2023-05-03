@@ -9,7 +9,9 @@ const initialState = {
   isError: false,
   regions: [],
 };
-const url = "http://localhost:5000/home/getAllRegions";
+// const url = "http://localhost:5000/home/getAllRegions";
+const url = "https://Graph-api.onrender.com/home/getAllRegions";
+
 export const getRegion = createAsyncThunk(
   "getAllRegions",
   async (_, thunkApi) => {

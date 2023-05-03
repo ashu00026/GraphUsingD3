@@ -14,7 +14,8 @@ const initialState = {
   countries: [],
 };
 
-const url = "http://localhost:5000/home/filterBySector";
+// const url = "http://localhost:5000/home/filterBySector";
+const url = "https://Graph-api.onrender.com/home/filterBySector";
 
 export const getSectorData = createAsyncThunk(
   "getSectorData",
@@ -46,7 +47,7 @@ const GetSectorDataSlice = createSlice({
         state.isLoading = true;
       })
       .addCase(getSectorData.fulfilled, (state, action) => {
-        console.log(action);
+        // console.log(action);
 
         state.intensities = action.payload.finalIntensities;
         state.liklihoods = action.payload.finalLikelihoods;

@@ -14,13 +14,15 @@ const initialState = {
   liklihoods: null,
   relevances: null,
 };
-const url = "http://localhost:5000/home/filterByRegion";
+// const url = "http://localhost:5000/home/filterByRegion";
+const url = "https://Graph-api.onrender.com/home/filterByRegion";
+
 export const getRegionData = createAsyncThunk("getRegionData", async (data) => {
   // console.log("in");
   try {
-    console.log(data);
+    // console.log(data);
     const resp = await axios.post(url, data);
-    console.log(resp);
+    // console.log(resp);
     const realdata = { ...resp.data, data };
     return realdata;
   } catch (error) {
@@ -53,7 +55,7 @@ const RegionDataSlice = createSlice({
         state.isLoading = false;
       })
       .addCase(getRegionData.rejected, (state, { payload }) => {
-        console.log(payload);
+        // console.log(payload);
         state.isError = true;
       });
   },

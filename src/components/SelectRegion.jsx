@@ -12,7 +12,7 @@ function SelectRegion({ setLoadGraph2 }) {
     e.preventDefault();
     setLoadGraph2(false);
     const formData = new FormData(e.currentTarget);
-    console.log(formData.entries());
+    // console.log(formData.entries());
     const region = Object.fromEntries(formData);
     // console.log(region);
     dispatch(getRegionData(region));
