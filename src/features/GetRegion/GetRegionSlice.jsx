@@ -52,8 +52,8 @@ const GetRegionSlice = createSlice({
         state.isLoading = false;
       })
       .addCase(PURGE, (state) => {
-        storage.remove("root");
-        // return initialState;
+        // storage.remove("root");
+        return initialState;
       });
   },
 });
