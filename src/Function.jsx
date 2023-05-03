@@ -12,7 +12,7 @@ import { getRegionData } from "./features/getRegionData/RegionDataSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { getRegion } from "./features/GetRegion/GetRegionSlice";
 import SelectRegion from "./components/SelectRegion";
-import { persistor } from "./Store";
+import { persistor } from "./main";
 
 function Function() {
   const setLoadGraph2 = () => {};
