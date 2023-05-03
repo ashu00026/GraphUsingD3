@@ -14,7 +14,7 @@ import { Provider } from "react-redux";
 
 if (process.env.NODE_ENV === "production") disableReactDevTools();
 
-let persistor = persistStore(Store);
+export let persistor = persistStore(Store);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
