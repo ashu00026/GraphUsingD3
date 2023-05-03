@@ -21,7 +21,7 @@ export const getRegion = createAsyncThunk(
       // console.log(resp);
       return resp.data;
     } catch (error) {
-      // console.log(error);
+      console.log(error);
       // return error;
       return thunkApi.rejectWithValue(error.message);
     }
