@@ -3,6 +3,7 @@ import React from "react";
 // import axios from "axios";
 import axios from "axios";
 import { active } from "d3";
+import { PURGE } from "redux-persist";
 
 const initialState = {
   isLoading: true,
