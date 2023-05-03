@@ -52,7 +52,8 @@ const GetRegionSlice = createSlice({
         state.isLoading = false;
       })
       .addCase(PURGE, (state) => {
-        customEntityAdapter.removeAll(state);
+        storage.remove("root");
+        // return initialState;
       });
   },
 });
