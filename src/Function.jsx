@@ -31,6 +31,7 @@ function Function() {
     );
   }
   if (isError) {
+    console.log("error in Function");
     return (
       <div>
         {/* <Error /> */}
