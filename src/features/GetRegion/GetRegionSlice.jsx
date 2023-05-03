@@ -46,6 +46,7 @@ const GetRegionSlice = createSlice({
       })
       .addCase(getRegion.rejected, (state, action) => {
         // console.log(action.payload);
+        console.log(action);
         state.isError = true;
         state.isLoading = false;
       });
