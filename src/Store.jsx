@@ -3,7 +3,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import RegionDataReducer from "./features/getRegionData/RegionDataSlice";
 // import RegionDataReducer from "./features/getRegionData/RegionDataSlice";
 // import AllRegionsReducer from "./features/GetRegion";
-import AllRegionsReducer from "./features/getRegion/GetRegionSlice";
+import AllRegionsReducer from "./features/GetRegion/GetRegionSlice";
 import SectorDataReducer from "./features/GetSectorData/GetSectorDataSlice";
 import storage from "redux-persist/lib/storage";
 import { persistReducer } from "redux-persist";
