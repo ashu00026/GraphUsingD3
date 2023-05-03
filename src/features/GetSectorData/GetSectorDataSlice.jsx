@@ -15,7 +15,7 @@ const initialState = {
 };
 
 // const url = "http://localhost:5000/home/filterBySector";
-const url = "https://Graph-api.onrender.com/home/filterBySector";
+const url = "https://graph-api.onrender.com/home/filterBySector";
 
 export const getSectorData = createAsyncThunk(
   "getSectorData",

@@ -15,7 +15,7 @@ const initialState = {
   relevances: null,
 };
 // const url = "http://localhost:5000/home/filterByRegion";
-const url = "https://Graph-api.onrender.com/home/filterByRegion";
+const url = "https://graph-api.onrender.com/home/filterByRegion";
 
 export const getRegionData = createAsyncThunk("getRegionData", async (data) => {
   // console.log("in");
