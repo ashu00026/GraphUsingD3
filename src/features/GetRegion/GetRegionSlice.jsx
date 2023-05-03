@@ -49,6 +49,9 @@ const GetRegionSlice = createSlice({
         console.log(action);
         state.isError = true;
         state.isLoading = false;
+      })
+      .addCase(PURGE, (state) => {
+        customEntityAdapter.removeAll(state);
       });
   },
 });
