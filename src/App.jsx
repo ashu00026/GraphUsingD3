@@ -14,7 +14,7 @@ function App() {
         <Routes>
           {/* <Route path="/" element={<SelectRegion />} /> */}
           <Route path="/" element={<Function />} />
-          <Route path="/filterRegion" element={<LoadGraph />} />
+          <Route path="filterRegion" element={<LoadGraph />} />
           {/* <Route path="/filterSector" element={<LoadSectorGraph />} /> */}
         </Routes>
       </BrowserRouter>
