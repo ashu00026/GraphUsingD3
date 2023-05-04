@@ -13,13 +13,7 @@ function LoadGraph() {
   const { isLoading, region } = useSelector((state) => state.regionsData);
   const { sector } = useSelector((state) => state.sectorData);
   // const { topics } = useSelector((state) => state.sectorsData.topics);
-  useEffect(() => {
-    window.localStorage.setItem("region", JSON.stringify(region));
-    window.localStorage.setItem("sector", null);
-  }, [region]);
-  useEffect(() => {
-    if (sector) window.localStorage.setItem("sector", JSON.stringify(sector));
-  }, [sector]);
+
   return (
     <div>
       <div className="header">
